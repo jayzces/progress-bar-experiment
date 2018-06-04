@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Progress Bar Experiment</title>
+    </head>
+    <body>
+        <div class="form">
+            <h4>Controls</h4>
+            <div class="field">
+                <label>Left <span>50</span></label>
+                <input type="range" id="left-progress" min="0" max="100" data-target="#left-bar" />
+            </div>
+            <div class="field">
+                <label>Right <span>50</span></label>
+                <input type="range" id="right-progress" min="0" max="100" data-target="#right-bar" />
+            </div>
+
+            <button id="reset">Reset</button>
+        </div>
+
+        <div class="progress-bars">
+            <div id="left-bar" class="left-bar"></div>
+            <div id="right-bar" class="right-bar"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
